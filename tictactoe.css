@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e8f1f2; /* Light pastel blue */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+}
+.container {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    border-radius: 2rem; /* Slightly rounded game area */
+    background-color: #fdfdfd; /* Neutral background for the game board */
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none; /* No border for boxes */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+    font-size: 8vmin;
+    color: #fefae0; /* Soft yellow for text */
+    background-color: #606c38; /* Earthy green for boxes */
+    cursor: pointer; /* Pointer to indicate interactivity */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.box:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    background-color: #283618; /* Darker green on hover */
+}
+#reset, #new-btn {
+    color: white;
+    background-color: #283618; /* Match the game theme */
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#reset:hover, #new-btn:hover {
+    background-color: #606c38; /* Match box hover color */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+#msg {
+    color: #283618; /* Match the game theme */
+    font-size: 6vmin;
+    margin-top: 1rem;
+    text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); /* Slight glow */
+}
+.msg-container {
+    height: 30vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.hide {
+    display: none;
+}
